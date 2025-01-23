@@ -34,5 +34,5 @@ predictions = naive_bayes(
     laplace=1, 
     pos_prior=0.8
 )
-## To Evaluate Results:
+## 4. To Evaluate Results:
 Compare predictions with dev_labels to assess accuracy.
