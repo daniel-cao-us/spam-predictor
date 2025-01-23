@@ -1,7 +1,7 @@
 # Spam Predictor
 
 ## Overview
-This Python program implements a Naive Bayes classifier for sentiment analysis. It is designed to classify text data (e.g., reviews) into positive or negative sentiments. The implementation uses Laplace smoothing to handle unseen words and allows customization of key parameters such as the smoothing factor and positive prior probability.
+This simple Python program implements a Naive Bayes classifier for sentiment analysis. It is designed to classify text data (e.g., reviews) into positive or negative sentiments. The implementation uses Laplace smoothing to handle unseen words and allows customization of key parameters such as the smoothing factor and positive prior probability.
 
 ## Key Features
 
@@ -16,9 +16,9 @@ Performance Logging:
 Tracks progress during the development set evaluation with tqdm.
 
 ## Usage
-## Prepare Dataset
+## 1. Prepare Dataset
 
-## Structure  data into training and development sets with labels.
+## 2. Structure  data into training and development sets with labels.
 Load Data:
 train_set, train_labels, dev_set, dev_labels = load_data(
     trainingdir="path/to/train", 
@@ -26,7 +26,7 @@ train_set, train_labels, dev_set, dev_labels = load_data(
     stemming=False,
     lowercase=True
 )
-## Train and Predict:
+## 3. Train and Predict:
 predictions = naive_bayes(
     train_set, 
     train_labels, 
