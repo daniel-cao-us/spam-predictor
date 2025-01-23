@@ -12,8 +12,6 @@ def print_values(laplace, pos_prior):
 
 """
 load_data loads the input data by calling the provided utility.
-You can adjust default values for stemming and lowercase, when we haven't passed in specific values,
-to potentially improve performance.
 """
 def load_data(trainingdir, testdir, stemming=False, lowercase=True, silently=False):
     print(f"Stemming: {stemming}")
@@ -24,8 +22,6 @@ def load_data(trainingdir, testdir, stemming=False, lowercase=True, silently=Fal
 
 """
 Main function for training and predicting with naive bayes.
-    You can modify the default values for the Laplace smoothing parameter and the prior for the positive label.
-    Notice that we may pass in specific values for these parameters during our testing.
 """
 def naive_bayes(train_set, train_labels, dev_set, laplace=1, pos_prior=0.8, silently=False):
     
